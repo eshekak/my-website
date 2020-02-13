@@ -5,9 +5,7 @@
    [my-website.events :as events]
    [my-website.routes :as routes]
    [my-website.views :as views]
-   [my-website.config :as config]
-   ))
-
+   [my-website.config :as config]))
 
 (defn dev-setup []
   (when config/debug?

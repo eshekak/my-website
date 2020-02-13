@@ -12,7 +12,8 @@
                  [ns-tracker "0.4.0"]]
 
   :plugins [[lein-garden "0.3.0"]
-            [lein-shell "0.5.0"]]
+            [lein-shell "0.5.0"]
+            [lein-cljfmt "0.6.6"]]
 
   :min-lein-version "2.5.3"
 
