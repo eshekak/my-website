@@ -7,7 +7,8 @@
                  [thheller/shadow-cljs "2.8.83"]
                  [reagent "0.9.1"]
                  [re-frame "0.11.0"]
-                 [secretary "1.2.3"]
+                 [bidi "2.1.6"]
+                 [kibu/pushy "0.3.8"]
                  [garden "1.3.9"]
                  [ns-tracker "0.4.0"]]
 

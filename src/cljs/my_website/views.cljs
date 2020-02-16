@@ -1,46 +1,27 @@
 (ns my-website.views
-  (:require
-   [re-frame.core :as re-frame]
-   [my-website.subs :as subs]))
+    (:require [re-frame.core :as re-frame]
+              [my-website.routes :as routes]
+              [my-website.subs :as subs]))
 
-
-;; home
-
-
+;; --------------------
 (defn home-panel []
   (let [name (re-frame/subscribe [::subs/name])]
-    [:div
-     [:h1 (str "Hello from " @name ". This is the Home Page.")]
-
-     [:div
-      [:a {:href "#/about"}
-       "go to About Page"]]]))
-
-
-;; about
-
+    (fn []
+      [:div (str "Hello from " @name ". This is the Home Page.")
+       [:div [:a {:href (routes/url :about)} "go to About Page"]]])))
 
 (defn about-panel []
-  [:div
-   [:h1 "This is the About Page."]
+  (fn []
+    [:div "This is the About Page."
+     [:div [:a {:href (routes/url ::subs/home)} "go to Home Page"]]]))
 
-   [:div
-    [:a {:href "#/"}
-     "go to Home Page"]]])
-
-
-;; main
-
-
-(defn- panels [panel-name]
-  (case panel-name
-    :home-panel [home-panel]
-    :about-panel [about-panel]
-    [:div]))
-
-(defn show-panel [panel-name]
-  [panels panel-name])
+;; --------------------
+(defmulti panels identity)
+(defmethod panels :home-panel [] [home-panel])
+(defmethod panels :about-panel [] [about-panel])
+(defmethod panels :default [] [:div])
 
 (defn main-panel []
   (let [active-panel (re-frame/subscribe [::subs/active-panel])]
-    [show-panel @active-panel]))
+    (fn []
+      (panels @active-panel))))
