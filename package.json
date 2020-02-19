@@ -14,7 +14,9 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "serve -s ./resources/public",
-    "heroku-postbuild": "lein prod"
+    "start": "serve -s ./resources/public"
+  },
+  "engines": {
+    "node": "12.16.1"
   }
 }
