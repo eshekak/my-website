@@ -265,7 +265,6 @@ Use `debug?` for logging or other tasks that should run only on `dev` builds:
 
 Build the app with the `prod` profile:
 
-
 ```sh
 lein prod
 ```
