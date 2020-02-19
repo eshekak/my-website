@@ -15,6 +15,6 @@
   },
   "scripts": {
     "start": "serve -s ./resources/public",
-    "postinstall": "lein deps && lein build"
+    "build": "lein deps && lein build"
   }
 }
