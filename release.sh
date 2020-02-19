@@ -1,1 +1,1 @@
-lein deps && lein prod
+lein prod
