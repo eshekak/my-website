@@ -10,13 +10,6 @@
     "highlight.js": "9.15.10",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-highlight.js": "1.0.7",
-    "serve": "^11.3.0"
-  },
-  "scripts": {
-    "start": "serve -s ./resources/public"
-  },
-  "engines": {
-    "node": "12.16.1"
+    "react-highlight.js": "1.0.7"
   }
 }

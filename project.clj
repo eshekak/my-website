@@ -10,13 +10,12 @@
                  [bidi "2.1.6"]
                  [kibu/pushy "0.3.8"]
                  [garden "1.3.9"]
-                 [ns-tracker "0.4.0"]]
+                 [ns-tracker "0.4.0"]
+                 [compojure "1.6.1"]]
 
   :plugins [[lein-garden "0.3.0"]
             [lein-shell "0.5.0"]
-            [lein-cljfmt "0.6.6"]
-            [lein-npm "0.6.2"]
-            [lein-cljsbuild "1.1.0"]]
+            [lein-cljfmt "0.6.6"]]
 
   :min-lein-version "2.5.3"
 
@@ -61,11 +60,4 @@
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}}
 
-  :prep-tasks [["garden" "once"]]
-
-  :cljsbuild {
-               :builds [{
-                          :source-paths ["src/cljs"]
-                          :compiler {:output-to "resources/public/js/compiled/app.js"
-                                     :target :nodejs
-                                     :optimizations :simple }}]})
+  :prep-tasks [["garden" "once"]])
