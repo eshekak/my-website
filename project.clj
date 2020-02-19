@@ -14,7 +14,8 @@
 
   :plugins [[lein-garden "0.3.0"]
             [lein-shell "0.5.0"]
-            [lein-cljfmt "0.6.6"]]
+            [lein-cljfmt "0.6.6"]
+            [lein-npm "0.6.2"]]
 
   :min-lein-version "2.5.3"
 
@@ -59,4 +60,11 @@
 
    :prod { :dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}}
 
-  :prep-tasks [["garden" "once"]])
+  :prep-tasks [["garden" "once"]]
+
+  :cljsbuild {
+               :builds [{
+                          :source-paths ["src/cljs"]
+                          :compiler {:output-to "resources/public/js/compiled/app.js"
+                                     :target :nodejs
+                                     :optimizations :simple }}]})
