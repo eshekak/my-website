@@ -14,7 +14,6 @@
     "serve": "^11.3.0"
   },
   "scripts": {
-    "start": "serve -s ./resources/public",
-    "build": "lein deps && lein build"
+    "start": "serve -s ./resources/public"
   }
 }
