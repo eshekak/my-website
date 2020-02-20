@@ -12,8 +12,16 @@ RUN lein deps
 RUN lein prod
 
 # Remove extra files and directories
-RUN rm README.md karma.conf.js package-lock.json project.clj shadow-cljs.edn
-RUN rm -rf ./dev ./lsp ./src ./target ./test
+RUN rm Dockerfile README.md karma.conf.js package-lock.json project.clj shadow-cljs.edn
+RUN rm -rf dev lsp src target test
+
+# Remove all extra node_modules
+#RUN mv node_modules/serve serve && \
+#    mv node_modules/.bin .bin && \
+#    rm -rf node_modules && \
+#    mkdir node_modules && \
+#    mv serve node_modules/serve && \
+#    mv .bin node_modules/.bin
 
 EXPOSE 8080
 
