@@ -23,6 +23,6 @@ RUN rm -rf dev lsp src target test
 #    mv serve node_modules/serve && \
 #    mv .bin node_modules/.bin
 
-EXPOSE 80
+EXPOSE 443
 
 CMD ["npm", "run", "start"]
