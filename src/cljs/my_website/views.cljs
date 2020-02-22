@@ -13,7 +13,7 @@
 (defn about-panel []
   (fn []
     [:div "This is the About Page."
-     [:div [:a {:href (routes/url ::subs/home)} "go to Home Page"]]]))
+     [:div [:a {:href (routes/url ::subs/home)} "go to Home Page :)"]]]))
 
 ;; --------------------
 (defmulti panels identity)
