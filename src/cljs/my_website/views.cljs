@@ -9,7 +9,7 @@
   []
   (let [name (re-frame/subscribe [::subs/name])]
     (fn []
-      [:div (str "Hello from " @name ". This is the Home Page.")
+      [:div (str "Hello from " @name ". This is the Home Page :)")
        [:div [:a {:href (routes/url :about)} "go to About Page"]]])))
 
 (defn about-panel
