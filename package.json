@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "highlight.js": "9.15.10",
+    "lint-staged": "^10.0.7",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-highlight.js": "1.0.7",
@@ -18,5 +19,8 @@
   "scripts": {
     "start": "node ./app.js",
     "format": "zprint-clj -i './src/**/*.{clj,cljs,cljc,edn}' -o ./"
+  },
+  "lint-staged": {
+    "formatting": "format"
   }
 }
