@@ -1,8 +1,11 @@
 language: node_js
 node_js:
-  - 12
+- 12
 deploy:
   provider: heroku
   api_key: HEROKU_API_KEY
   on:
     branch: master
+env:
+  global:
+    secure: bfzY7Ujxixv2XpafOZC7vYS908k2fCQZSpFsF1TzHYtitzMwpvnudfKQIBPgt7QX81EzJ+7MeLa8/0/QTYAPw2r9Fn5XezqZU5zOYuZV01Rp/5Ki/VU9psHEBxjbMYqFfmizQymL32ViiM4iHQhkkRytJba+yRNRQd/WSOKvB5Nans1tsXw4fuEi9wStV0aDqCFUo2nJD/TNVCtGWxhV39n4QaROpj/AI17SmuqiShfQ6feu1TzaqjGog0TltACcmUOsqHXNmwNyifjXnAG1j1/AdC50fBy/gfNQV8PuXc0Udf7TSnToagVzM1c4KhITzLr3JVIzH1Vt1aWrg4qmdq7l8C00KHBT0wrv4SSBWNW32eqaajOIBKYHulw6as0tYEJHVF9tP5KwYQkGtLKJB2WRqvP2iHNFxrvniQNYsBuwyG2jYUVTM0plWmqOjs3FUXPV63An03TDDxYu49mbLvrh87AsIDfUAmDK5FXxfb28GY2yGdFtV4GQWDytniHslig88myN5iw++1qCqZDA4lnDlit3caeuWmDnFQeAquGuOyAqej2NvZdSlrlgE8uoqghCDIRblNEtaDh+qOnsRfpaJUx0Aq7wV2NmT5RKvC6G8aZDmLR5sL3118mIS91xhPQM6rfXnq+FHbEzi026XzVKpYnwDpPTP+pTnzeeWFQ=
