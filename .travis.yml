@@ -4,6 +4,5 @@ node_js:
 deploy:
   provider: heroku:git
   api_key: HEROKU_API_KEY
-  edge: true
   on:
     branch: master
