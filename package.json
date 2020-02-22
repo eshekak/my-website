@@ -21,6 +21,6 @@
     "format": "zprint-clj -i './src/**/*.{clj,cljs,cljc,edn}' -o ./"
   },
   "lint-staged": {
-    "formatting": "format"
+    "formatting": "npm run format"
   }
 }
