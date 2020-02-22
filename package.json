@@ -12,10 +12,11 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-highlight.js": "1.0.7",
-    "serve": "^11.3.0"
+    "serve": "^11.3.0",
+    "zprint-clj": "^0.8.0"
   },
   "scripts": {
-    "start": "node ./app.js"
-
+    "start": "node ./app.js",
+    "format": "zprint-clj -i './src/**/*.{clj,cljs,cljc,edn}' -o ./"
   }
 }

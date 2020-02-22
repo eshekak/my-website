@@ -1,5 +1,5 @@
 (ns my-website.css
-  (:require [garden.def :refer [defstyles]]))
+  (:require
+    [garden.def :refer [defstyles]]))
 
-(defstyles screen
-  [:body {:color "red"}])
+(defstyles screen [:body {:color "red"}])

@@ -14,8 +14,7 @@
                  [compojure "1.6.1"]]
 
   :plugins [[lein-garden "0.3.0"]
-            [lein-shell "0.5.0"]
-            [lein-cljfmt "0.6.6"]]
+            [lein-shell "0.5.0"]]
 
   :min-lein-version "2.5.3"
 
