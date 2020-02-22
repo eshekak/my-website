@@ -1,10 +1,11 @@
 {
   "devDependencies": {
-    "shadow-cljs": "2.8.83",
+    "husky": "^4.2.3",
     "karma": "4.4.1",
     "karma-chrome-launcher": "3.1.0",
     "karma-cljs-test": "0.1.0",
-    "karma-junit-reporter": "2.0.1"
+    "karma-junit-reporter": "2.0.1",
+    "shadow-cljs": "2.8.83"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -18,9 +19,16 @@
   },
   "scripts": {
     "start": "node ./app.js",
-    "format": "zprint-clj -i './src/**/*.{clj,cljs,cljc,edn}' -o ./"
+    "format": "zprint-clj -i './**/*.{clj,cljs,cljc,edn}' -o ./"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "formatting": "npm run format"
+    "*.{clj,cljs,cljc,edn}": [
+      "npm run format"
+    ]
   }
 }
