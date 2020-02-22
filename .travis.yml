@@ -4,7 +4,7 @@ node_js:
 before_install:
   - gem install bundler
 deploy:
-  provider: heroku:git
+  provider: heroku
   api_key: HEROKU_API_KEY
   on:
     branch: master
