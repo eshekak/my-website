@@ -1,3 +1,8 @@
-(ns my-website.views)
+(ns my-website.views
+  (:require-macros [cljss.core])
+  (:require
+    [cljss.core :as css :refer-macros [defstyles]]))
 
-(defn main [] [:div "Hey, there!"])
+(defstyles color-it [] {:color "blue"})
+
+(defn main [] [:div {:class (color-it)} "Hey, there!"])

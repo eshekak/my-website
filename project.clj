@@ -14,7 +14,8 @@
      [kibu/pushy "0.3.8"]
      [garden "1.3.9"]
      [ns-tracker "0.4.0"]
-     [compojure "1.6.1"]]
+     [compojure "1.6.1"]
+     [clj-commons/cljss "1.6.4"]]
   :plugins [[lein-garden "0.3.0"] [lein-shell "0.5.0"]]
   :min-lein-version "2.5.3"
   :jvm-opts ["-Xmx1G"]
