@@ -12,11 +12,10 @@
      [re-frame "0.11.0"]
      [bidi "2.1.6"]
      [kibu/pushy "0.3.8"]
-     [garden "1.3.9"]
      [ns-tracker "0.4.0"]
      [compojure "1.6.1"]
      [clj-commons/cljss "1.6.4"]]
-  :plugins [[lein-garden "0.3.0"] [lein-shell "0.5.0"]]
+  :plugins [[lein-shell "0.5.0"]]
   :min-lein-version "2.5.3"
   :jvm-opts ["-Xmx1G"]
   :source-paths ["src/clj" "src/cljs"]
@@ -24,14 +23,6 @@
   :clean-targets
     ^{:protect false}
     ["resources/public/js/compiled" "target" "test/js" "resources/public/css"]
-  :garden
-    {:builds
-       [{:id "screen",
-         :source-paths ["src/clj"],
-         :stylesheet my-website.css/screen,
-         :compiler
-           {:output-to "resources/public/css/screen.css",
-            :pretty-print? true}}]}
   :shell
     {:commands
        {"open"
@@ -72,5 +63,4 @@
            [day8.re-frame/re-frame-10x "0.5.1"]
            [day8.re-frame/tracing "0.5.3"]],
         :source-paths ["dev"]},
-     :prod {:dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}}
-  :prep-tasks [["garden" "once"]])
+     :prod {:dependencies [[day8.re-frame/tracing-stubs "0.5.3"]]}})
