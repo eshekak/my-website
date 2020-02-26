@@ -15,10 +15,10 @@
    :height "100vh",
    :background-color "#0f0f0f"})
 
-(defstyles main__logo [] {:width "100%"})
+(defstyles main__logo [] {:width "460px"})
 
 (defstyles
-  main__logo-line
+  main__svg-el
   [animation-delay]
   {:stroke "#888888",
    :stroke-width 1,
