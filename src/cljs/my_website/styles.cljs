@@ -1,10 +1,12 @@
 (ns my-website.styles
   (:require-macros [cljss.core])
   (:require
-    [cljss.core :as css :refer-macros [defstyles]]))
+    [cljss.core :as css :refer-macros [defstyles defkeyframes]]))
+
+(defkeyframes dash [] {:to {:stroke-dashoffset 0}})
 
 (defstyles
-  color-it
+  main
   []
   {:display "flex",
    :align-items "center",
@@ -12,3 +14,15 @@
    :width "100%",
    :height "100vh",
    :background-color "#0f0f0f"})
+
+(defstyles main__logo [] {:width "100%"})
+
+(defstyles
+  main__logo-line
+  [animation-delay]
+  {:stroke "#888888",
+   :stroke-width 1,
+   :stroke-dasharray 1000,
+   :stroke-dashoffset 1000,
+   :animation "dash 1s ease forwards",
+   :animation-delay animation-delay})
