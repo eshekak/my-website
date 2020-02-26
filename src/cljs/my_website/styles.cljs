@@ -1,9 +1,9 @@
 (ns my-website.styles
   (:require-macros [cljss.core])
   (:require
-    [cljss.core :as css :refer-macros [defstyles defkeyframes]]))
+    [cljss.core :as css :refer-macros [defstyles]]))
 
-(defkeyframes dash [] {:to {:stroke-dashoffset 0}})
+(def background-color "#0f0f0f")
 
 (defstyles
   main
@@ -13,14 +13,16 @@
    :justify-content "center",
    :width "100%",
    :height "100vh",
-   :background-color "#0f0f0f"})
+   :background-color background-color})
 
-(defstyles main__logo [] {:width "460px"})
+(defstyles main__container [] {:position "relative"})
+
+(defstyles main__logo [] {:width "460px", :height "110px"})
 
 (defstyles
   main__svg-el
   [animation-delay]
-  {:stroke "#888888",
+  {:stroke "#88888838",
    :stroke-width 1,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
