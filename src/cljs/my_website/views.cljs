@@ -60,4 +60,34 @@
     [line {:x1 101, :y1 1, :x2 159, :y2 59, :animation-delay "2700ms"}]
     [line {:x1 159, :y1 1, :x2 101, :y2 59, :animation-delay "2750ms"}]
     [circle {:cx 130, :cy 30, :r 12.5, :animation-delay "4200ms"}]
-    [circle {:cx 130, :cy 30, :r 25, :animation-delay "4250ms"}]]])
+    [circle {:cx 130, :cy 30, :r 25, :animation-delay "4250ms"}]
+    ;   Fourth name letter cell
+    [line {:x1 151, :y1 1, :x2 209, :y2 59, :animation-delay "2800ms"}]
+    [line {:x1 209, :y1 1, :x2 151, :y2 59, :animation-delay "2850ms"}]
+    [circle {:cx 180, :cy 30, :r 12.5, :animation-delay "4300ms"}]
+    [circle {:cx 180, :cy 30, :r 25, :animation-delay "4350ms"}]
+    ;   Fifth name letter cell
+    [line {:x1 201, :y1 1, :x2 259, :y2 59, :animation-delay "2900ms"}]
+    [line {:x1 259, :y1 1, :x2 201, :y2 59, :animation-delay "2950ms"}]
+    [circle {:cx 230, :cy 30, :r 12.5, :animation-delay "4400ms"}]
+    [circle {:cx 230, :cy 30, :r 25, :animation-delay "4450ms"}]
+    ;   Fifth name letter cell
+    [line {:x1 251, :y1 1, :x2 309, :y2 59, :animation-delay "3000ms"}]
+    [line {:x1 309, :y1 1, :x2 251, :y2 59, :animation-delay "3050ms"}]
+    [circle {:cx 280, :cy 30, :r 12.5, :animation-delay "4500ms"}]
+    [circle {:cx 280, :cy 30, :r 25, :animation-delay "4550ms"}]
+    ;   Sixth name letter cell
+    [line {:x1 301, :y1 1, :x2 359, :y2 59, :animation-delay "3100ms"}]
+    [line {:x1 359, :y1 1, :x2 301, :y2 59, :animation-delay "3150ms"}]
+    [circle {:cx 330, :cy 30, :r 12.5, :animation-delay "4600ms"}]
+    [circle {:cx 330, :cy 30, :r 25, :animation-delay "4650ms"}]
+    ;   Seventh name letter cell
+    [line {:x1 351, :y1 1, :x2 409, :y2 59, :animation-delay "3200ms"}]
+    [line {:x1 409, :y1 1, :x2 351, :y2 59, :animation-delay "3250ms"}]
+    [circle {:cx 380, :cy 30, :r 12.5, :animation-delay "4700ms"}]
+    [circle {:cx 380, :cy 30, :r 25, :animation-delay "4750ms"}]
+    ;   Eighth name letter cell
+    [line {:x1 401, :y1 1, :x2 459, :y2 59, :animation-delay "3300ms"}]
+    [line {:x1 459, :y1 1, :x2 401, :y2 59, :animation-delay "3350ms"}]
+    [circle {:cx 430, :cy 30, :r 12.5, :animation-delay "4800ms"}]
+    [circle {:cx 430, :cy 30, :r 25, :animation-delay "4850ms"}]]])
