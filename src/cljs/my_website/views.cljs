@@ -127,24 +127,33 @@
     ;   Letters
     ;    Name
     ;   A
-    [A/A {:top "-21px", :left "-21px", :animation-delay "5500ms", :letter :A}]
+    [A/A {:top "-16px", :left "-15px", :animation-delay "5500ms", :letter :A}]
     ;    L
-    [A/A {:top "-21px", :left "29px", :animation-delay "5600ms", :letter :L}]
+    [A/A {:top "-16px", :left "35px", :animation-delay "5550ms", :letter :L}]
     ;    E
-    [A/A {:top "-21px", :left "79px", :animation-delay "5700ms", :letter :E}]
+    [A/A {:top "-16px", :left "85px", :animation-delay "5600ms", :letter :E}]
     ;    X
-    [A/A {:top "-21px", :left "129px", :animation-delay "5800ms", :letter :X}]
+    [A/A {:top "-16px", :left "135px", :animation-delay "5650ms", :letter :X}]
     ;    A
-    [A/A {:top "-21px", :left "179px", :animation-delay "5900ms", :letter :A}]
+    [A/A {:top "-16px", :left "185px", :animation-delay "5700ms", :letter :A}]
     ;    N
-    [A/A {:top "-21px", :left "229px", :animation-delay "6000ms", :letter :N}]
+    [A/A {:top "-16px", :left "235px", :animation-delay "5750ms", :letter :N}]
     ;    D
-    [A/A {:top "-21px", :left "279px", :animation-delay "6100ms", :letter :D}]
+    [A/A {:top "-16px", :left "285px", :animation-delay "5800ms", :letter :D}]
     ;    E
-    [A/A {:top "-21px", :left "329px", :animation-delay "6200ms", :letter :E}]
+    [A/A {:top "-16px", :left "335px", :animation-delay "5850ms", :letter :E}]
     ;    R
-    [A/A {:top "-21px", :left "379px", :animation-delay "6300ms", :letter :R}]
+    [A/A {:top "-16px", :left "385px", :animation-delay "5900ms", :letter :R}]
     ;    Surname
-    ;    [A/A
-    ;     {:top "-21px", :left "379px", :animation-delay "6300ms", :letter :O}]
-   ]])
+    ;    O
+    [A/A {:top "34px", :left "60px", :animation-delay "5950ms", :letter :O}]
+    ;    L
+    [A/A {:top "34px", :left "110px", :animation-delay "6000ms", :letter :L}]
+    ;    E
+    [A/A {:top "34px", :left "160px", :animation-delay "6050ms", :letter :E}]
+    ;    N
+    [A/A {:top "34px", :left "210px", :animation-delay "6100ms", :letter :N}]
+    ;    E
+    [A/A {:top "34px", :left "260px", :animation-delay "6150ms", :letter :E}]
+    ;    V
+    [A/A {:top "34px", :left "310px", :animation-delay "6200ms", :letter :V}]]])
