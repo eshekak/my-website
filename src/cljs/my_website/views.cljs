@@ -125,6 +125,26 @@
      [circle {:cx 355, :cy 80, :r 12.5, :animation-delay "5400ms"}]
      [circle {:cx 355, :cy 80, :r 25, :animation-delay "5450ms"}]]
     ;   Letters
-    ;   A letter
-    [A/A
-     {:top "-21px", :bottom "-21px", :animation-delay "5500ms", :letter :A}]]])
+    ;    Name
+    ;   A
+    [A/A {:top "-21px", :left "-21px", :animation-delay "5500ms", :letter :A}]
+    ;    L
+    [A/A {:top "-21px", :left "29px", :animation-delay "5600ms", :letter :L}]
+    ;    E
+    [A/A {:top "-21px", :left "79px", :animation-delay "5700ms", :letter :E}]
+    ;    X
+    [A/A {:top "-21px", :left "129px", :animation-delay "5800ms", :letter :X}]
+    ;    A
+    [A/A {:top "-21px", :left "179px", :animation-delay "5900ms", :letter :A}]
+    ;    N
+    [A/A {:top "-21px", :left "229px", :animation-delay "6000ms", :letter :N}]
+    ;    D
+    [A/A {:top "-21px", :left "279px", :animation-delay "6100ms", :letter :D}]
+    ;    E
+    [A/A {:top "-21px", :left "329px", :animation-delay "6200ms", :letter :E}]
+    ;    R
+    [A/A {:top "-21px", :left "379px", :animation-delay "6300ms", :letter :R}]
+    ;    Surname
+    ;    [A/A
+    ;     {:top "-21px", :left "379px", :animation-delay "6300ms", :letter :O}]
+   ]])

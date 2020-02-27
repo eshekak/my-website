@@ -12,7 +12,7 @@
   letter--animation
   [animation-delay]
   {:stroke "#ffffff",
-   :stroke-width 4,
+   :stroke-width 1,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
    :animation "dash 1s ease forwards",
@@ -20,8 +20,8 @@
 
 (defstyles
   letter--position
-  [{top :top, bottom :bottom}]
-  {:position "absolute", :top top, :left bottom, :width "100px"})
+  [{top :top, left :left}]
+  {:position "absolute", :top top, :left left, :width "100px"})
 
 (defn A
   [{animation-delay :animation-delay, letter :letter, :as all}]
