@@ -2,17 +2,27 @@
   (:require-macros [cljss.core])
   (:require
     [my-website.styles :as s]
-    [my-website.letters.A :as A]))
+    [my-website.letter.generator :refer [gen-letter]]))
 
+; Styles
+(defn custom-styles
+  [animation-delay]
+  {:stroke "#424245", :stroke-width 1, :animation-delay animation-delay})
+
+; Markup
 (defn line
   [{x1 :x1, y1 :y1, x2 :x2, y2 :y2, animation-delay :animation-delay}]
   [:line
-   {:class (s/main__svg-el animation-delay), :x1 x1, :y1 y1, :x2 x2, :y2 y2}])
+   {:class (s/main__svg-el (custom-styles animation-delay)),
+    :x1 x1,
+    :y1 y1,
+    :x2 x2,
+    :y2 y2}])
 
 (defn circle
   [{cx :cx, cy :cy, r :r, animation-delay :animation-delay}]
   [:circle
-   {:class (s/main__svg-el animation-delay),
+   {:class (s/main__svg-el (custom-styles animation-delay)),
     :cx cx,
     :cy cy,
     :r r,
@@ -127,33 +137,48 @@
     ;   Letters
     ;    Name
     ;   A
-    [A/A {:top "-16px", :left "-15px", :animation-delay "4000ms", :letter :A}]
+    [gen-letter
+     {:top "-16px", :left "-15px", :animation-delay "4000ms", :letter :A}]
     ;    L
-    [A/A {:top "-16px", :left "35px", :animation-delay "4050ms", :letter :L}]
+    [gen-letter
+     {:top "-16px", :left "35px", :animation-delay "4050ms", :letter :L}]
     ;    E
-    [A/A {:top "-16px", :left "85px", :animation-delay "4100ms", :letter :E}]
+    [gen-letter
+     {:top "-16px", :left "85px", :animation-delay "4100ms", :letter :E}]
     ;    X
-    [A/A {:top "-16px", :left "135px", :animation-delay "4150ms", :letter :X}]
+    [gen-letter
+     {:top "-16px", :left "135px", :animation-delay "4150ms", :letter :X}]
     ;    A
-    [A/A {:top "-16px", :left "185px", :animation-delay "4200ms", :letter :A}]
+    [gen-letter
+     {:top "-16px", :left "185px", :animation-delay "4200ms", :letter :A}]
     ;    N
-    [A/A {:top "-16px", :left "235px", :animation-delay "4250ms", :letter :N}]
+    [gen-letter
+     {:top "-16px", :left "235px", :animation-delay "4250ms", :letter :N}]
     ;    D
-    [A/A {:top "-16px", :left "285px", :animation-delay "4300ms", :letter :D}]
+    [gen-letter
+     {:top "-16px", :left "285px", :animation-delay "4300ms", :letter :D}]
     ;    E
-    [A/A {:top "-16px", :left "335px", :animation-delay "4350ms", :letter :E}]
+    [gen-letter
+     {:top "-16px", :left "335px", :animation-delay "4350ms", :letter :E}]
     ;    R
-    [A/A {:top "-16px", :left "385px", :animation-delay "4400ms", :letter :R}]
+    [gen-letter
+     {:top "-16px", :left "385px", :animation-delay "4400ms", :letter :R}]
     ;    Surname
     ;    O
-    [A/A {:top "34px", :left "60px", :animation-delay "4450ms", :letter :O}]
+    [gen-letter
+     {:top "34px", :left "60px", :animation-delay "4450ms", :letter :O}]
     ;    L
-    [A/A {:top "34px", :left "110px", :animation-delay "4500ms", :letter :L}]
+    [gen-letter
+     {:top "34px", :left "110px", :animation-delay "4500ms", :letter :L}]
     ;    E
-    [A/A {:top "34px", :left "160px", :animation-delay "4550ms", :letter :E}]
+    [gen-letter
+     {:top "34px", :left "160px", :animation-delay "4550ms", :letter :E}]
     ;    N
-    [A/A {:top "34px", :left "210px", :animation-delay "4600ms", :letter :N}]
+    [gen-letter
+     {:top "34px", :left "210px", :animation-delay "4600ms", :letter :N}]
     ;    E
-    [A/A {:top "34px", :left "260px", :animation-delay "4650ms", :letter :E}]
+    [gen-letter
+     {:top "34px", :left "260px", :animation-delay "4650ms", :letter :E}]
     ;    V
-    [A/A {:top "34px", :left "310px", :animation-delay "4700ms", :letter :V}]]])
+    [gen-letter
+     {:top "34px", :left "310px", :animation-delay "4700ms", :letter :V}]]])

@@ -3,8 +3,6 @@
   (:require
     [cljss.core :as css :refer-macros [defstyles]]))
 
-(def background-color "#0a0a0a")
-
 (defstyles
   main
   []
@@ -13,7 +11,7 @@
    :justify-content "center",
    :width "100%",
    :height "100vh",
-   :background-color background-color})
+   :background-color "#0a0a0a"})
 
 (defstyles main__container [] {:position "relative"})
 
@@ -21,9 +19,11 @@
 
 (defstyles
   main__svg-el
-  [animation-delay]
-  {:stroke "#424245",
-   :stroke-width 1,
+  [{stroke :stroke,
+    stroke-width :stroke-width,
+    animation-delay :animation-delay}]
+  {:stroke stroke,
+   :stroke-width stroke-width,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
    :animation "dash 1s ease forwards",

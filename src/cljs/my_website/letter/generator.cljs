@@ -1,36 +1,31 @@
-(ns my-website.letters.A
+(ns my-website.letter.generator
   (:require-macros [cljss.core])
   (:require
     [cljss.core :as css :refer-macros [defstyles]])
   (:require
     [my-website.styles :as s])
   (:require
-    [my-website.letters.letters :as letters]))
+    [my-website.letter.letters :refer [letters]]))
 
-; TODO: Generate this defstyles with defstyles in the main ns
-(defstyles
-  letter--animation
+; Styles
+(defn custom-styles
   [animation-delay]
-  {:stroke "#f5f5f7",
-   :stroke-width 4,
-   :stroke-dasharray 1000,
-   :stroke-dashoffset 1000,
-   :animation "dash 1s ease forwards",
-   :animation-delay animation-delay})
+  {:stroke "#f5f5f7", :stroke-width 3, :animation-delay animation-delay})
 
 (defstyles
   letter--position
   [{top :top, left :left}]
   {:position "absolute", :top top, :left left, :width "90px"})
 
-(defn A
+; Markup
+(defn gen-letter
   [{animation-delay :animation-delay, letter :letter, :as all}]
   [:div {:class (letter--position all)}
    [:svg
     {:x "0px", :y "0px", :width "100%", :height "100%", :viewBox "0 0 255 255"}
     [:path
-     {:class (letter--animation animation-delay),
+     {:class (s/main__svg-el (custom-styles animation-delay)),
       :fill "transparent",
       ; Create a map of letters` pathes in a separate file and add logic of
       ; their pulling
-      :d (get letters/letters-map letter)}]]])
+      :d (get letters letter)}]]])
