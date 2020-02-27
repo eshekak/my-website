@@ -126,4 +126,5 @@
      [circle {:cx 355, :cy 80, :r 25, :animation-delay "5450ms"}]]
     ;   Letters
     ;   A letter
-    [A/A {:top "-21px", :bottom "-21px", :animation-delay "5500ms"}]]])
+    [A/A
+     {:top "-21px", :bottom "-21px", :animation-delay "5500ms", :letter :A}]]])

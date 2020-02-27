@@ -1,4 +1,4 @@
-(ns my-website.letters.letters-map)
+(ns my-website.letters.letters)
 
 (def letters-map
   {:A
