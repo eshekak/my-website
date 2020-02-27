@@ -12,7 +12,7 @@
   letter--animation
   [animation-delay]
   {:stroke "#f5f5f7",
-   :stroke-width 2,
+   :stroke-width 4,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
    :animation "dash 1s ease forwards",
