@@ -181,4 +181,6 @@
      {:top "34px", :left "260px", :animation-delay "4650ms", :letter :E}]
     ;    V
     [gen-letter
-     {:top "34px", :left "310px", :animation-delay "4700ms", :letter :V}]]])
+     {:top "34px", :left "310px", :animation-delay "4700ms", :letter :V}]
+    ;    Frontend developer
+    [:h1 {:class (s/main__occupation)} "Frontend developer"]]])

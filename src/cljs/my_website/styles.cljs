@@ -28,3 +28,13 @@
    :stroke-dashoffset 1000,
    :animation "dash 1s ease forwards",
    :animation-delay animation-delay})
+
+(defstyles
+  main__occupation
+  []
+  {:margin 0,
+   :margin-top "1rem",
+   :text-align "center",
+   :font-size "1.5rem",
+   :font-family "'Roboto Slab', serif",
+   :color "#f5f5f7"})
