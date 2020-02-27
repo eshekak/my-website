@@ -11,7 +11,7 @@
 (defstyles
   letter--animation
   [animation-delay]
-  {:stroke "#ffffff",
+  {:stroke "#f5f5f7",
    :stroke-width 2,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,

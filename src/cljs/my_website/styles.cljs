@@ -3,7 +3,7 @@
   (:require
     [cljss.core :as css :refer-macros [defstyles]]))
 
-(def background-color "#0f0f0f")
+(def background-color "#0a0a0a")
 
 (defstyles
   main
@@ -22,7 +22,7 @@
 (defstyles
   main__svg-el
   [animation-delay]
-  {:stroke "#88888838",
+  {:stroke "#424245",
    :stroke-width 1,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
