@@ -183,4 +183,7 @@
     [gen-letter
      {:top "34px", :left "310px", :animation-delay "4700ms", :letter :V}]
     ;    Frontend developer
-    [:h1 {:class (s/main__occupation)} "Frontend developer"]]])
+    [:h1 {:class (s/main__occupation)} "Frontend developer"]
+    ;    Email
+    [:a {:class (s/main__email), :href "mailto:aolenev@pm.com"}
+     "aolenev@pm.com"]]])

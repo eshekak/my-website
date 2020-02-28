@@ -11,6 +11,7 @@
    :justify-content "center",
    :width "100%",
    :height "100vh",
+   :text-align "center",
    :background-color "#0a0a0a"})
 
 (defstyles main__container [] {:position "relative"})
@@ -33,8 +34,20 @@
   main__occupation
   []
   {:margin 0,
-   :margin-top "1rem",
-   :text-align "center",
-   :font-size "1.5rem",
+   :margin-top "0.5rem",
+   :color "transparent !important",
+   :font-size "2rem",
    :font-family "'Roboto Slab', serif",
-   :color "#f5f5f7"})
+   :animation "appear 1s ease forwards",
+   :animation-delay "4750ms"})
+
+(defstyles
+  main__email
+  []
+  {:display "block",
+   :margin-top "0.5rem",
+   :color "transparent !important",
+   :font-size "1.33rem",
+   :font-family "'Roboto Slab', serif",
+   :animation "appear 1s ease forwards",
+   :animation-delay "4900ms"})
