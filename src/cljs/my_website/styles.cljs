@@ -39,7 +39,7 @@
    :font-size "2rem",
    :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
-   :animation-delay "4750ms"})
+   :animation-delay "1900ms"})
 
 (defstyles
   main__email
@@ -50,4 +50,4 @@
    :font-size "1.33rem",
    :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
-   :animation-delay "4900ms"})
+   :animation-delay "2100ms"})

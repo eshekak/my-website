@@ -10,7 +10,7 @@
 ; Styles
 (defn custom-styles
   [animation-delay]
-  {:stroke "#f5f5f7", :stroke-width 2, :animation-delay animation-delay})
+  {:stroke "#f5f5f7", :stroke-width 4, :animation-delay animation-delay})
 
 (defstyles
   letter--position
