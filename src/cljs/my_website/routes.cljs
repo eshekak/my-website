@@ -2,18 +2,12 @@
   (:require
     [bidi.bidi :as bidi]
     [pushy.core :as pushy]
-    [re-frame.core :as re-frame]
-    [my-website.events :as events]))
+    [my-website.db :as db]))
 
-(def routes ["/" {"" :home, "about" :about}])
+(def app-routes ["/" {"" :home}])
 
-(defn- parse-url [url] (bidi/match-route routes url))
+(defn set-page! [match] (swap! db/state assoc :page match))
 
-(defn- dispatch-route
-  [matched-route]
-  (let [panel-name (keyword (str (name (:handler matched-route)) "-panel"))]
-    (re-frame/dispatch [::events/set-active-panel panel-name])))
+(def history (pushy/pushy set-page! (partial bidi/match-route app-routes)))
 
-(defn app-routes [] (pushy/start! (pushy/pushy dispatch-route parse-url)))
-
-(def url (partial bidi/path-for routes))
+(pushy/start! history)
