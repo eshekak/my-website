@@ -1,16 +1,17 @@
 (ns my-website.letter.generator
   (:require-macros [cljss.core])
   (:require
-    [cljss.core :as css :refer-macros [defstyles]])
-  (:require
-    [my-website.styles :as s])
-  (:require
-    [my-website.letter.letters :refer [letters]]))
+    [cljss.core :as css :refer-macros [defstyles]]
+    [my-website.styles :as s]
+    [my-website.letter.letters :refer [letters]]
+    [my-website.styles.colors :refer [color-text-primary]]))
 
 ; Styles
 (defn custom-styles
   [animation-delay]
-  {:stroke "#f5f5f7", :stroke-width 4, :animation-delay animation-delay})
+  {:stroke color-text-primary,
+   :stroke-width 4,
+   :animation-delay animation-delay})
 
 (defstyles
   letter--position
@@ -26,6 +27,4 @@
     [:path
      {:class (s/main__svg-el (custom-styles animation-delay)),
       :fill "transparent",
-      ; Create a map of letters` pathes in a separate file and add logic of
-      ; their pulling
       :d (get letters letter)}]]])

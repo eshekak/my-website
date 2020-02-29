@@ -2,12 +2,13 @@
   (:require-macros [cljss.core])
   (:require
     [my-website.styles :as s]
-    [my-website.letter.generator :refer [gen-letter]]))
+    [my-website.letter.generator :refer [gen-letter]]
+    [my-website.styles.colors :refer [color-secondary]]))
 
 ; Styles
 (defn custom-styles
   [animation-delay]
-  {:stroke "#424245", :stroke-width 1, :animation-delay animation-delay})
+  {:stroke color-secondary, :stroke-width 1, :animation-delay animation-delay})
 
 ; Markup
 (defn line

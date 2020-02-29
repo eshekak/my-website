@@ -2,6 +2,8 @@ body, html {
   margin: 0;
   width: 100%;
   height: 100%;
+
+  font-family: 'Roboto Slab', serif;
 }
 
 /* TODO: Unable to set styles in .cljs */

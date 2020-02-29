@@ -1,7 +1,8 @@
 (ns my-website.styles
   (:require-macros [cljss.core])
   (:require
-    [cljss.core :as css :refer-macros [defstyles]]))
+    [cljss.core :as css :refer-macros [defstyles]]
+    [my-website.styles.colors :refer [color-primary]]))
 
 (defstyles
   main
@@ -12,7 +13,7 @@
    :width "100%",
    :height "100vh",
    :text-align "center",
-   :background-color "#0a0a0a"})
+   :background-color color-primary})
 
 (defstyles main__container [] {:position "relative"})
 
@@ -35,9 +36,8 @@
   []
   {:margin 0,
    :margin-top "0.5rem",
-   :color "#0a0a0a",
+   :color color-primary,
    :font-size "1.75rem",
-   :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
    :animation-delay "1900ms"})
 
@@ -46,8 +46,7 @@
   []
   {:display "block",
    :margin-top "0.5rem",
-   :color "#0a0a0a",
+   :color color-primary,
    :font-size "1.33rem",
-   :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
    :animation-delay "2100ms"})
