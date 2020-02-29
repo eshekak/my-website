@@ -1,11 +1,11 @@
-(ns my-website.styles
+(ns my-website.pages.home.styles
   (:require-macros [cljss.core])
   (:require
     [cljss.core :as css :refer-macros [defstyles]]
     [my-website.styles.colors :refer [color-primary color-secondary]]))
 
 (defstyles
-  main
+  home
   []
   {:display "flex",
    :align-items "center",
@@ -14,24 +14,12 @@
    :height "100vh",
    :text-align "center"})
 
-(defstyles main__container [] {:position "relative"})
+(defstyles home-container [] {:position "relative"})
 
-(defstyles main__logo [] {:width "460px", :height "110px"})
-
-(defstyles
-  main__svg-el
-  [{stroke :stroke,
-    stroke-width :stroke-width,
-    animation-delay :animation-delay}]
-  {:stroke stroke,
-   :stroke-width stroke-width,
-   :stroke-dasharray 1000,
-   :stroke-dashoffset 1000,
-   :animation "dash 1s ease forwards",
-   :animation-delay animation-delay})
+(defstyles home-logo [] {:width "460px", :height "110px"})
 
 (defstyles
-  main__occupation
+  home-occupation
   []
   {:margin 0,
    :margin-top "0.5rem",
@@ -41,7 +29,7 @@
    :animation-delay "1900ms"})
 
 (defstyles
-  main__email
+  home-email
   []
   {:display "block",
    :margin-top "0.5rem",

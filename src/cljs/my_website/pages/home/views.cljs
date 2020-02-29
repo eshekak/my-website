@@ -1,13 +1,14 @@
-(ns my-website.views
+(ns my-website.pages.home.views
   (:require
-    [my-website.styles :as s]
+    [my-website.pages.home.styles :as s-home]
+    [my-website.styles.svg :as s-svg]
     [my-website.components.letter.views :refer [letter]]))
 
 ; Markup
 (defn line
   [{x1 :x1, y1 :y1, x2 :x2, y2 :y2, animation-delay :animation-delay}]
   [:line
-   {:class (s/main__svg-el (s/custom-styles animation-delay)),
+   {:class (s-svg/el (s-home/custom-styles animation-delay)),
     :x1 x1,
     :y1 y1,
     :x2 x2,
@@ -16,17 +17,17 @@
 (defn circle
   [{cx :cx, cy :cy, r :r, animation-delay :animation-delay}]
   [:circle
-   {:class (s/main__svg-el (s/custom-styles animation-delay)),
+   {:class (s-svg/el (s-home/custom-styles animation-delay)),
     :cx cx,
     :cy cy,
     :r r,
     :fill "none"}])
 
-(defn main
+(defn home
   []
-  [:div {:class (s/main)}
-   [:div {:class (s/main__container)}
-    [:svg {:class (s/main__logo)}
+  [:div {:class (s-home/home)}
+   [:div {:class (s-home/home-container)}
+    [:svg {:class (s-home/home-logo)}
      ;    Horizontal lines
      [line {:x1 0, :y1 5, :x2 460, :y2 5, :animation-delay 0}]
      [line {:x1 0, :y1 55, :x2 460, :y2 55, :animation-delay "20ms"}]
@@ -169,7 +170,8 @@
     ;    V
     [letter {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
     ;    Frontend developer
-    [:h1 {:class (s/main__occupation)} "Frontend developer"]
+    [:h1 {:class (s-home/home-occupation)} "Frontend developer"]
     ;    Email
-    [:a {:class (s/main__email), :href "mailto:aolenev@pm.com", :tabindex -1}
+    [:a
+     {:class (s-home/home-email), :href "mailto:aolenev@pm.com", :tabindex -1}
      "aolenev@pm.com"]]])

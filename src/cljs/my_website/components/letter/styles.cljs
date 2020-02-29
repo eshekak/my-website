@@ -10,6 +10,6 @@
    :animation-delay animation-delay})
 
 (defstyles
-  letter--position
+  position
   [{top :top, left :left}]
   {:position "absolute", :top top, :left left, :width "90px"})
