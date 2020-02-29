@@ -1,12 +1,11 @@
-(ns my-website.letter.generator
-  (:require-macros [cljss.core])
+(ns my-website.components.letter.views
   (:require
     [my-website.styles :as s]
-    [my-website.letter.style :refer [letter--position custom-styles]]
-    [my-website.letter.letters :refer [letters]]))
+    [my-website.components.letter.styles :refer
+     [letter--position custom-styles]]
+    [my-website.components.letter.letters :refer [letters]]))
 
-; Markup
-(defn gen-letter
+(defn letter
   [{animation-delay :animation-delay, letter :letter, :as all}]
   [:div {:class (letter--position all)}
    [:svg

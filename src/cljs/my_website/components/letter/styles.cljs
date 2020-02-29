@@ -1,4 +1,4 @@
-(ns my-website.letter.style
+(ns my-website.components.letter.styles
   (:require
     [cljss.core :as css :refer-macros [defstyles]]
     [my-website.styles.colors :refer [color-text-primary]]))

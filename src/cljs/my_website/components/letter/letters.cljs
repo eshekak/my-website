@@ -1,4 +1,4 @@
-(ns my-website.letter.letters)
+(ns my-website.components.letter.letters)
 
 (def letters
   {:A

@@ -1,20 +1,13 @@
 (ns my-website.views
-  (:require-macros [cljss.core])
   (:require
     [my-website.styles :as s]
-    [my-website.letter.generator :refer [gen-letter]]
-    [my-website.styles.colors :refer [color-secondary]]))
-
-; Styles
-(defn custom-styles
-  [animation-delay]
-  {:stroke color-secondary, :stroke-width 1, :animation-delay animation-delay})
+    [my-website.components.letter.views :refer [letter]]))
 
 ; Markup
 (defn line
   [{x1 :x1, y1 :y1, x2 :x2, y2 :y2, animation-delay :animation-delay}]
   [:line
-   {:class (s/main__svg-el (custom-styles animation-delay)),
+   {:class (s/main__svg-el (s/custom-styles animation-delay)),
     :x1 x1,
     :y1 y1,
     :x2 x2,
@@ -23,7 +16,7 @@
 (defn circle
   [{cx :cx, cy :cy, r :r, animation-delay :animation-delay}]
   [:circle
-   {:class (s/main__svg-el (custom-styles animation-delay)),
+   {:class (s/main__svg-el (s/custom-styles animation-delay)),
     :cx cx,
     :cy cy,
     :r r,
@@ -138,51 +131,43 @@
     ;   Letters
     ;    Name
     ;   A
-    [gen-letter
+    [letter
      {:top "-16px", :left "-15px", :animation-delay "1600ms", :letter :A}]
     ;    L
-    [gen-letter
-     {:top "-16px", :left "35px", :animation-delay "1620ms", :letter :L}]
+    [letter {:top "-16px", :left "35px", :animation-delay "1620ms", :letter :L}]
     ;    E
-    [gen-letter
-     {:top "-16px", :left "85px", :animation-delay "1640ms", :letter :E}]
+    [letter {:top "-16px", :left "85px", :animation-delay "1640ms", :letter :E}]
     ;    X
-    [gen-letter
+    [letter
      {:top "-16px", :left "135px", :animation-delay "1660ms", :letter :X}]
     ;    A
-    [gen-letter
+    [letter
      {:top "-16px", :left "185px", :animation-delay "1680ms", :letter :A}]
     ;    N
-    [gen-letter
+    [letter
      {:top "-16px", :left "235px", :animation-delay "1700ms", :letter :N}]
     ;    D
-    [gen-letter
+    [letter
      {:top "-16px", :left "285px", :animation-delay "1720ms", :letter :D}]
     ;    E
-    [gen-letter
+    [letter
      {:top "-16px", :left "335px", :animation-delay "1740ms", :letter :E}]
     ;    R
-    [gen-letter
+    [letter
      {:top "-16px", :left "385px", :animation-delay "1760ms", :letter :R}]
     ;    Surname
     ;    O
-    [gen-letter
-     {:top "34px", :left "60px", :animation-delay "1780ms", :letter :O}]
+    [letter {:top "34px", :left "60px", :animation-delay "1780ms", :letter :O}]
     ;    L
-    [gen-letter
-     {:top "34px", :left "110px", :animation-delay "1800ms", :letter :L}]
+    [letter {:top "34px", :left "110px", :animation-delay "1800ms", :letter :L}]
     ;    E
-    [gen-letter
-     {:top "34px", :left "160px", :animation-delay "1820ms", :letter :E}]
+    [letter {:top "34px", :left "160px", :animation-delay "1820ms", :letter :E}]
     ;    N
-    [gen-letter
-     {:top "34px", :left "210px", :animation-delay "1840ms", :letter :N}]
+    [letter {:top "34px", :left "210px", :animation-delay "1840ms", :letter :N}]
     ;    E
-    [gen-letter
-     {:top "34px", :left "260px", :animation-delay "1860ms", :letter :E}]
+    [letter {:top "34px", :left "260px", :animation-delay "1860ms", :letter :E}]
     ;    V
-    [gen-letter
-     {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
+    [letter {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
     ;    Frontend developer
     [:h1 {:class (s/main__occupation)} "Frontend developer"]
     ;    Email
