@@ -12,8 +12,7 @@
    :justify-content "center",
    :width "100%",
    :height "100vh",
-   :text-align "center",
-   :background-color color-primary})
+   :text-align "center"})
 
 (defstyles main__container [] {:position "relative"})
 
