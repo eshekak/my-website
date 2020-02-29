@@ -2,13 +2,18 @@
   (:require
     [my-website.pages.home.styles :as s-home]
     [my-website.styles.svg :as s-svg]
-    [my-website.components.letter.views :as v-letter]))
+    [my-website.components.letter.views :as v-letter]
+    [my-website.styles.colors :refer [color-secondary]]))
 
 ; Markup
 (defn line
   [{x1 :x1, y1 :y1, x2 :x2, y2 :y2, animation-delay :animation-delay}]
   [:line
-   {:class (s-svg/el (s-home/custom-styles animation-delay)),
+   {:class
+      (s-svg/el
+        {:stroke color-secondary,
+         :stroke-width 1,
+         :animation-delay animation-delay}),
     :x1 x1,
     :y1 y1,
     :x2 x2,
@@ -17,7 +22,11 @@
 (defn circle
   [{cx :cx, cy :cy, r :r, animation-delay :animation-delay}]
   [:circle
-   {:class (s-svg/el (s-home/custom-styles animation-delay)),
+   {:class
+      (s-svg/el
+        {:stroke color-secondary,
+         :stroke-width 1,
+         :animation-delay animation-delay}),
     :cx cx,
     :cy cy,
     :r r,

@@ -2,7 +2,7 @@
   (:require-macros [cljss.core])
   (:require
     [cljss.core :as css :refer-macros [defstyles]]
-    [my-website.styles.colors :refer [color-primary color-secondary]]))
+    [my-website.styles.colors :refer [color-primary]]))
 
 (defstyles
   home
@@ -37,7 +37,3 @@
    :font-size "1.33rem",
    :animation "appear 1s ease forwards",
    :animation-delay "2100ms"})
-
-(defn custom-styles
-  [animation-delay]
-  {:stroke color-secondary, :stroke-width 1, :animation-delay animation-delay})
