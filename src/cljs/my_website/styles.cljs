@@ -35,8 +35,8 @@
   []
   {:margin 0,
    :margin-top "0.5rem",
-   :color "transparent !important",
-   :font-size "2rem",
+   :color "#0a0a0a",
+   :font-size "1.75rem",
    :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
    :animation-delay "1900ms"})
@@ -46,7 +46,7 @@
   []
   {:display "block",
    :margin-top "0.5rem",
-   :color "transparent !important",
+   :color "#0a0a0a",
    :font-size "1.33rem",
    :font-family "'Roboto Slab', serif",
    :animation "appear 1s ease forwards",
