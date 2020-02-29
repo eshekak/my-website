@@ -4,6 +4,6 @@
     [my-website.styles.colors :refer [color-text-primary]]))
 
 (defstyles
-  position
+  letter
   [{top :top, left :left}]
-  {:position "absolute", :top top, :left left, :width "90px"})
+  {:position "absolute", :top top, :left left, :width "90px", :height "90px"})

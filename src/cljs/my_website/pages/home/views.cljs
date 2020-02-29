@@ -38,154 +38,402 @@
    [:div {:class (s-home/home-container)}
     [:svg {:class (s-home/home-logo)}
      ;    Horizontal lines
-     [line {:x1 0, :y1 5, :x2 460, :y2 5, :animation-delay 0}]
-     [line {:x1 0, :y1 55, :x2 460, :y2 55, :animation-delay "20ms"}]
-     [line {:x1 75, :y1 105, :x2 385, :y2 105, :animation-delay "40ms"}]
+     [line {:x1 0, :y1 "4.54%", :x2 "100%", :y2 "4.54%", :animation-delay 0}]
+     [line {:x1 0, :y1 "50%", :x2 "100%", :y2 "50%", :animation-delay "20ms"}]
+     [line
+      {:x1 "16.3%",
+       :y1 "95.5%",
+       :x2 "83.7%",
+       :y2 "95.5%",
+       :animation-delay "40ms"}]
      ;   Vertical lines
      ;    Name
-     [line {:x1 5, :y1 0, :x2 5, :y2 60, :animation-delay "60ms"}]
-     [line {:x1 55, :y1 0, :x2 55, :y2 60, :animation-delay "80ms"}]
-     [line {:x1 105, :y1 0, :x2 105, :y2 60, :animation-delay "100ms"}]
-     [line {:x1 155, :y1 0, :x2 155, :y2 60, :animation-delay "120ms"}]
-     [line {:x1 205, :y1 0, :x2 205, :y2 60, :animation-delay "140ms"}]
-     [line {:x1 255, :y1 0, :x2 255, :y2 60, :animation-delay "160ms"}]
-     [line {:x1 305, :y1 0, :x2 305, :y2 60, :animation-delay "180ms"}]
-     [line {:x1 355, :y1 0, :x2 355, :y2 60, :animation-delay "200ms"}]
-     [line {:x1 405, :y1 0, :x2 405, :y2 60, :animation-delay "220ms"}]
-     [line {:x1 455, :y1 0, :x2 455, :y2 60, :animation-delay "240ms"}]
+     [line
+      {:x1 "1.08%", :y1 0, :x2 "1.08%", :y2 "54.54%", :animation-delay "60ms"}]
+     [line
+      {:x1 "11.95%",
+       :y1 0,
+       :x2 "11.95%",
+       :y2 "54.54%",
+       :animation-delay "80ms"}]
+     [line
+      {:x1 "22.82%",
+       :y1 0,
+       :x2 "22.82%",
+       :y2 "54.54%",
+       :animation-delay "100ms"}]
+     [line
+      {:x1 "33.69%",
+       :y1 0,
+       :x2 "33.69%",
+       :y2 "54.54%",
+       :animation-delay "120ms"}]
+     [line
+      {:x1 "44.56%",
+       :y1 0,
+       :x2 "44.56%",
+       :y2 "54.54%",
+       :animation-delay "140ms"}]
+     [line
+      {:x1 "55.43%",
+       :y1 0,
+       :x2 "55.43%",
+       :y2 "54.54%",
+       :animation-delay "160ms"}]
+     [line
+      {:x1 "66.3%", :y1 0, :x2 "66.3%", :y2 "54.54%", :animation-delay "180ms"}]
+     [line
+      {:x1 "77.17%",
+       :y1 0,
+       :x2 "77.17%",
+       :y2 "54.54%",
+       :animation-delay "200ms"}]
+     [line
+      {:x1 "88.04%",
+       :y1 0,
+       :x2 "88.04%",
+       :y2 "54.54%",
+       :animation-delay "220ms"}]
+     [line
+      {:x1 "98.92%",
+       :y1 0,
+       :x2 "98.92%",
+       :y2 "54.54%",
+       :animation-delay "240ms"}]
      ;   Surname
-     [line {:x1 80, :y1 50, :x2 80, :y2 110, :animation-delay "260ms"}]
-     [line {:x1 130, :y1 50, :x2 130, :y2 110, :animation-delay "280ms"}]
-     [line {:x1 180, :y1 50, :x2 180, :y2 110, :animation-delay "300ms"}]
-     [line {:x1 230, :y1 50, :x2 230, :y2 110, :animation-delay "320ms"}]
-     [line {:x1 280, :y1 50, :x2 280, :y2 110, :animation-delay "340ms"}]
-     [line {:x1 330, :y1 50, :x2 330, :y2 110, :animation-delay "360ms"}]
-     [line {:x1 380, :y1 50, :x2 380, :y2 110, :animation-delay "380ms"}]
+     [line
+      {:x1 "17.39%",
+       :y1 "45.45%",
+       :x2 "17.39%",
+       :y2 "100%",
+       :animation-delay "260ms"}]
+     [line
+      {:x1 "28.26%",
+       :y1 "45.45%",
+       :x2 "28.26%",
+       :y2 "100%",
+       :animation-delay "280ms"}]
+     [line
+      {:x1 "39.13%",
+       :y1 "45.45%",
+       :x2 "39.13%",
+       :y2 "100%",
+       :animation-delay "300ms"}]
+     [line
+      {:x1 "50%",
+       :y1 "45.45%",
+       :x2 "50%",
+       :y2 "100%",
+       :animation-delay "320ms"}]
+     [line
+      {:x1 "60.87%",
+       :y1 "45.45%",
+       :x2 "60.87%",
+       :y2 "100%",
+       :animation-delay "340ms"}]
+     [line
+      {:x1 "71.74%",
+       :y1 "45.45%",
+       :x2 "71.74%",
+       :y2 "100%",
+       :animation-delay "360ms"}]
+     [line
+      {:x1 "82.61%",
+       :y1 "45.45%",
+       :x2 "82.61%",
+       :y2 "100%",
+       :animation-delay "380ms"}]
      ;    Name cells
      ;   First name letter cell
-     [line {:x1 1, :y1 1, :x2 59, :y2 59, :animation-delay "400ms"}]
-     [line {:x1 59, :y1 1, :x2 1, :y2 59, :animation-delay "420ms"}]
-     [circle {:cx 30, :cy 30, :r 12.5, :animation-delay "1000ms"}]
-     [circle {:cx 30, :cy 30, :r 25, :animation-delay "1020ms"}]
+     [line
+      {:x1 "0.217%",
+       :y1 "0.9%",
+       :x2 "12.82%",
+       :y2 "53.63%",
+       :animation-delay "400ms"}]
+     [line
+      {:x1 "12.82%",
+       :y1 "0.9%",
+       :x2 "0.217%",
+       :y2 "53.63%",
+       :animation-delay "420ms"}]
+     [circle {:cx "6.52%", :cy "27.27%", :r "3.75%", :animation-delay "1000ms"}]
+     [circle {:cx "6.52%", :cy "27.27%", :r "7.5%", :animation-delay "1020ms"}]
      ;   Second name letter cell
-     [line {:x1 51, :y1 1, :x2 109, :y2 59, :animation-delay "440ms"}]
-     [line {:x1 109, :y1 1, :x2 51, :y2 59, :animation-delay "460ms"}]
-     [circle {:cx 80, :cy 30, :r 12.5, :animation-delay "1040ms"}]
-     [circle {:cx 80, :cy 30, :r 25, :animation-delay "1060ms"}]
+     [line
+      {:x1 "11.087%",
+       :y1 "0.9%",
+       :x2 "23.69%",
+       :y2 "53.63%",
+       :animation-delay "440ms"}]
+     [line
+      {:x1 "23.69%",
+       :y1 "0.9%",
+       :x2 "11.087%",
+       :y2 "53.63%",
+       :animation-delay "460ms"}]
+     [circle
+      {:cx "17.39%", :cy "27.27%", :r "3.75%", :animation-delay "1040ms"}]
+     [circle {:cx "17.39%", :cy "27.27%", :r "7.5%", :animation-delay "1060ms"}]
      ;   Third name letter cell
-     [line {:x1 101, :y1 1, :x2 159, :y2 59, :animation-delay "480ms"}]
-     [line {:x1 159, :y1 1, :x2 101, :y2 59, :animation-delay "500ms"}]
-     [circle {:cx 130, :cy 30, :r 12.5, :animation-delay "1080ms"}]
-     [circle {:cx 130, :cy 30, :r 25, :animation-delay "1100ms"}]
+     [line
+      {:x1 "21.957%",
+       :y1 "0.9%",
+       :x2 "34.56%",
+       :y2 "53.63%",
+       :animation-delay "480ms"}]
+     [line
+      {:x1 "34.56%",
+       :y1 "0.9%",
+       :x2 "21.957%",
+       :y2 "53.63%",
+       :animation-delay "500ms"}]
+     [circle
+      {:cx "28.26%", :cy "27.27%", :r "3.75%", :animation-delay "1080ms"}]
+     [circle {:cx "28.26%", :cy "27.27%", :r "7.5%", :animation-delay "1100ms"}]
      ;   Fourth name letter cell
-     [line {:x1 151, :y1 1, :x2 209, :y2 59, :animation-delay "520ms"}]
-     [line {:x1 209, :y1 1, :x2 151, :y2 59, :animation-delay "540ms"}]
-     [circle {:cx 180, :cy 30, :r 12.5, :animation-delay "1120ms"}]
-     [circle {:cx 180, :cy 30, :r 25, :animation-delay "1140ms"}]
+     [line
+      {:x1 "32.827%",
+       :y1 "0.9%",
+       :x2 "45.43%",
+       :y2 "53.63%",
+       :animation-delay "520ms"}]
+     [line
+      {:x1 "45.43%",
+       :y1 "0.9%",
+       :x2 "32.827%",
+       :y2 "53.63%",
+       :animation-delay "540ms"}]
+     [circle
+      {:cx "39.13%", :cy "27.27%", :r "3.75%", :animation-delay "1120ms"}]
+     [circle {:cx "39.13%", :cy "27.27%", :r "7.5%", :animation-delay "1140ms"}]
      ;   Fifth name letter cell
-     [line {:x1 201, :y1 1, :x2 259, :y2 59, :animation-delay "560ms"}]
-     [line {:x1 259, :y1 1, :x2 201, :y2 59, :animation-delay "580ms"}]
-     [circle {:cx 230, :cy 30, :r 12.5, :animation-delay "1160ms"}]
-     [circle {:cx 230, :cy 30, :r 25, :animation-delay "1180ms"}]
+     [line
+      {:x1 "43.697%",
+       :y1 "0.9%",
+       :x2 "56.03%",
+       :y2 "53.63%",
+       :animation-delay "560ms"}]
+     [line
+      {:x1 "56.03%",
+       :y1 "0.9%",
+       :x2 "43.697%",
+       :y2 "53.63%",
+       :animation-delay "580ms"}]
+     [circle {:cx "50%", :cy "27.27%", :r "3.75%", :animation-delay "1160ms"}]
+     [circle {:cx "50%", :cy "27.27%", :r "7.5%", :animation-delay "1180ms"}]
      ;   Fifth name letter cell
-     [line {:x1 251, :y1 1, :x2 309, :y2 59, :animation-delay "600ms"}]
-     [line {:x1 309, :y1 1, :x2 251, :y2 59, :animation-delay "620ms"}]
-     [circle {:cx 280, :cy 30, :r 12.5, :animation-delay "1200ms"}]
-     [circle {:cx 280, :cy 30, :r 25, :animation-delay "1220ms"}]
+     [line
+      {:x1 "54.567%",
+       :y1 "0.9%",
+       :x2 "67.17%",
+       :y2 "53.63%",
+       :animation-delay "600ms"}]
+     [line
+      {:x1 "67.17%",
+       :y1 "0.9%",
+       :x2 "54.567%",
+       :y2 "53.63%",
+       :animation-delay "620ms"}]
+     [circle
+      {:cx "60.87%", :cy "27.27%", :r "3.75%", :animation-delay "1200ms"}]
+     [circle {:cx "60.87%", :cy "27.27%", :r "7.5%", :animation-delay "1220ms"}]
      ;   Sixth name letter cell
-     [line {:x1 301, :y1 1, :x2 359, :y2 59, :animation-delay "640ms"}]
-     [line {:x1 359, :y1 1, :x2 301, :y2 59, :animation-delay "660ms"}]
-     [circle {:cx 330, :cy 30, :r 12.5, :animation-delay "1240ms"}]
-     [circle {:cx 330, :cy 30, :r 25, :animation-delay "1260ms"}]
+     [line
+      {:x1 "65.437%",
+       :y1 "0.9%",
+       :x2 "78.04%",
+       :y2 "53.63%",
+       :animation-delay "640ms"}]
+     [line
+      {:x1 "78.04%",
+       :y1 "0.9%",
+       :x2 "65.437%",
+       :y2 "53.63%",
+       :animation-delay "660ms"}]
+     [circle
+      {:cx "71.74%", :cy "27.27%", :r "3.75%", :animation-delay "1240ms"}]
+     [circle {:cx "71.74%", :cy "27.27%", :r "7.5%", :animation-delay "1260ms"}]
      ;   Seventh name letter cell
-     [line {:x1 351, :y1 1, :x2 409, :y2 59, :animation-delay "680ms"}]
-     [line {:x1 409, :y1 1, :x2 351, :y2 59, :animation-delay "700ms"}]
-     [circle {:cx 380, :cy 30, :r 12.5, :animation-delay "1280ms"}]
-     [circle {:cx 380, :cy 30, :r 25, :animation-delay "1300ms"}]
+     [line
+      {:x1 "76.307%",
+       :y1 "0.9%",
+       :x2 "88.91%",
+       :y2 "53.63%",
+       :animation-delay "680ms"}]
+     [line
+      {:x1 "88.91%",
+       :y1 "0.9%",
+       :x2 "76.307%",
+       :y2 "53.63%",
+       :animation-delay "700ms"}]
+     [circle
+      {:cx "82.61%", :cy "27.27%", :r "3.75%", :animation-delay "1280ms"}]
+     [circle {:cx "82.61%", :cy "27.27%", :r "7.5%", :animation-delay "1300ms"}]
      ;   Eighth name letter cell
-     [line {:x1 401, :y1 1, :x2 459, :y2 59, :animation-delay "720ms"}]
-     [line {:x1 459, :y1 1, :x2 401, :y2 59, :animation-delay "740ms"}]
-     [circle {:cx 430, :cy 30, :r 12.5, :animation-delay "1320ms"}]
-     [circle {:cx 430, :cy 30, :r 25, :animation-delay "1340ms"}]
+     [line
+      {:x1 "87.177%",
+       :y1 "0.9%",
+       :x2 "99.78%",
+       :y2 "53.63%",
+       :animation-delay "720ms"}]
+     [line
+      {:x1 "99.78%",
+       :y1 "0.9%",
+       :x2 "87.177%",
+       :y2 "53.63%",
+       :animation-delay "740ms"}]
+     [circle
+      {:cx "93.48%", :cy "27.27%", :r "3.75%", :animation-delay "1320ms"}]
+     [circle {:cx "93.48%", :cy "27.27%", :r "7.5%", :animation-delay "1340ms"}]
      ;   Surname cells
      ;    First surname letter cell
-     [line {:x1 76, :y1 51, :x2 134, :y2 109, :animation-delay "760ms"}]
-     [line {:x1 134, :y1 51, :x2 76, :y2 109, :animation-delay "780ms"}]
-     [circle {:cx 105, :cy 80, :r 12.5, :animation-delay "1360ms"}]
-     [circle {:cx 105, :cy 80, :r 25, :animation-delay "1380ms"}]
+     [line
+      {:x1 "16.52%",
+       :y1 "46.36%",
+       :x2 "29.13%",
+       :y2 "99%",
+       :animation-delay "760ms"}]
+     [line
+      {:x1 "29.13%",
+       :y1 "46.36%",
+       :x2 "16.52%",
+       :y2 "99%",
+       :animation-delay "780ms"}]
+     [circle
+      {:cx "22.82%", :cy "72.72%", :r "3.75%", :animation-delay "1360ms"}]
+     [circle {:cx "22.82%", :cy "72.72%", :r "7.5%", :animation-delay "1380ms"}]
      ;    Second surname letter cell
-     [line {:x1 126, :y1 51, :x2 184, :y2 109, :animation-delay "800ms"}]
-     [line {:x1 184, :y1 51, :x2 126, :y2 109, :animation-delay "820ms"}]
-     [circle {:cx 155, :cy 80, :r 12.5, :animation-delay "1400ms"}]
-     [circle {:cx 155, :cy 80, :r 25, :animation-delay "1420ms"}]
+     [line
+      {:x1 "27.39%",
+       :y1 "46.36%",
+       :x2 "40%",
+       :y2 "99%",
+       :animation-delay "800ms"}]
+     [line
+      {:x1 "40%",
+       :y1 "46.36%",
+       :x2 "27.39%",
+       :y2 "99%",
+       :animation-delay "820ms"}]
+     [circle
+      {:cx "33.69%", :cy "72.72%", :r "3.75%", :animation-delay "1400ms"}]
+     [circle {:cx "33.69%", :cy "72.72%", :r "7.5%", :animation-delay "1420ms"}]
      ;    Third surname letter cell
-     [line {:x1 176, :y1 51, :x2 234, :y2 109, :animation-delay "840ms"}]
-     [line {:x1 234, :y1 51, :x2 176, :y2 109, :animation-delay "860ms"}]
-     [circle {:cx 205, :cy 80, :r 12.5, :animation-delay "1440ms"}]
-     [circle {:cx 205, :cy 80, :r 25, :animation-delay "1460ms"}]
+     [line
+      {:x1 "38.26%",
+       :y1 "46.36%",
+       :x2 "50.87%",
+       :y2 "99%",
+       :animation-delay "840ms"}]
+     [line
+      {:x1 "50.87%",
+       :y1 "46.36%",
+       :x2 "38.26%",
+       :y2 "99%",
+       :animation-delay "860ms"}]
+     [circle
+      {:cx "44.566%", :cy "72.72%", :r "3.75%", :animation-delay "1440ms"}]
+     [circle
+      {:cx "44.566%", :cy "72.72%", :r "7.5%", :animation-delay "1460ms"}]
      ;    Fourth surname letter cell
-     [line {:x1 226, :y1 51, :x2 284, :y2 109, :animation-delay "880ms"}]
-     [line {:x1 284, :y1 51, :x2 226, :y2 109, :animation-delay "900ms"}]
-     [circle {:cx 255, :cy 80, :r 12.5, :animation-delay "1480ms"}]
-     [circle {:cx 255, :cy 80, :r 25, :animation-delay "1500ms"}]
+     [line
+      {:x1 "49.13%",
+       :y1 "46.36%",
+       :x2 "61.738%",
+       :y2 "99%",
+       :animation-delay "880ms"}]
+     [line
+      {:x1 "61.738%",
+       :y1 "46.36%",
+       :x2 "49.13%",
+       :y2 "99%",
+       :animation-delay "900ms"}]
+     [circle
+      {:cx "55.436%", :cy "72.72%", :r "3.75%", :animation-delay "1480ms"}]
+     [circle
+      {:cx "55.436%", :cy "72.72%", :r "7.5%", :animation-delay "1500ms"}]
      ;    Fifth surname letter cell
-     [line {:x1 276, :y1 51, :x2 334, :y2 109, :animation-delay "920ms"}]
-     [line {:x1 334, :y1 51, :x2 276, :y2 109, :animation-delay "940ms"}]
-     [circle {:cx 305, :cy 80, :r 12.5, :animation-delay "1520ms"}]
-     [circle {:cx 305, :cy 80, :r 25, :animation-delay "1540ms"}]
+     [line
+      {:x1 "60%",
+       :y1 "46.36%",
+       :x2 "72.6%",
+       :y2 "99%",
+       :animation-delay "920ms"}]
+     [line
+      {:x1 "72.6%",
+       :y1 "46.36%",
+       :x2 "60%",
+       :y2 "99%",
+       :animation-delay "940ms"}]
+     [circle
+      {:cx "66.30%", :cy "72.72%", :r "3.75%", :animation-delay "1520ms"}]
+     [circle {:cx "66.30%", :cy "72.72%", :r "7.5%", :animation-delay "1540ms"}]
      ;    Sixth surname letter cell
-     [line {:x1 326, :y1 51, :x2 384, :y2 109, :animation-delay "960ms"}]
-     [line {:x1 384, :y1 51, :x2 326, :y2 109, :animation-delay "980ms"}]
-     [circle {:cx 355, :cy 80, :r 12.5, :animation-delay "1560ms"}]
-     [circle {:cx 355, :cy 80, :r 25, :animation-delay "1580ms"}]]
+     [line
+      {:x1 "70.87%",
+       :y1 "46.36%",
+       :x2 "83.47%",
+       :y2 "99%",
+       :animation-delay "960ms"}]
+     [line
+      {:x1 "83.47%",
+       :y1 "46.36%",
+       :x2 "70.87%",
+       :y2 "99%",
+       :animation-delay "980ms"}]
+     [circle
+      {:cx "77.176%", :cy "72.72%", :r "3.75%", :animation-delay "1560ms"}]
+     [circle
+      {:cx "77.176%", :cy "72.72%", :r "7.5%", :animation-delay "1580ms"}]]
     ;   Letters
     ;    Name
     ;   A
     [v-letter/letter
-     {:top "-16px", :left "-15px", :animation-delay "1600ms", :letter :A}]
+     {:top "-8.4%", :left "-3.26%", :animation-delay "1600ms", :letter :A}]
     ;    L
     [v-letter/letter
-     {:top "-16px", :left "35px", :animation-delay "1620ms", :letter :L}]
+     {:top "-8.4%", :left "7.61%", :animation-delay "1620ms", :letter :L}]
     ;    E
     [v-letter/letter
-     {:top "-16px", :left "85px", :animation-delay "1640ms", :letter :E}]
+     {:top "-8.4%", :left "18.48%", :animation-delay "1640ms", :letter :E}]
     ;    X
     [v-letter/letter
-     {:top "-16px", :left "135px", :animation-delay "1660ms", :letter :X}]
+     {:top "-8.4%", :left "29.35%", :animation-delay "1660ms", :letter :X}]
     ;    A
     [v-letter/letter
-     {:top "-16px", :left "185px", :animation-delay "1680ms", :letter :A}]
+     {:top "-8.4%", :left "40.22%", :animation-delay "1680ms", :letter :A}]
     ;    N
     [v-letter/letter
-     {:top "-16px", :left "235px", :animation-delay "1700ms", :letter :N}]
+     {:top "-8.4%", :left "51.09%", :animation-delay "1700ms", :letter :N}]
     ;    D
     [v-letter/letter
-     {:top "-16px", :left "285px", :animation-delay "1720ms", :letter :D}]
+     {:top "-8.4%", :left "61.96%", :animation-delay "1720ms", :letter :D}]
     ;    E
     [v-letter/letter
-     {:top "-16px", :left "335px", :animation-delay "1740ms", :letter :E}]
+     {:top "-8.4%", :left "72.83%", :animation-delay "1740ms", :letter :E}]
     ;    R
     [v-letter/letter
-     {:top "-16px", :left "385px", :animation-delay "1760ms", :letter :R}]
+     {:top "-8.4%", :left "83.7%", :animation-delay "1760ms", :letter :R}]
     ;    Surname
     ;    O
     [v-letter/letter
-     {:top "34px", :left "60px", :animation-delay "1780ms", :letter :O}]
+     {:top "17.65%", :left "13.04%", :animation-delay "1780ms", :letter :O}]
     ;    L
     [v-letter/letter
-     {:top "34px", :left "110px", :animation-delay "1800ms", :letter :L}]
+     {:top "17.65%", :left "23.91%", :animation-delay "1800ms", :letter :L}]
     ;    E
     [v-letter/letter
-     {:top "34px", :left "160px", :animation-delay "1820ms", :letter :E}]
+     {:top "17.65%", :left "34.78%", :animation-delay "1820ms", :letter :E}]
     ;    N
     [v-letter/letter
-     {:top "34px", :left "210px", :animation-delay "1840ms", :letter :N}]
+     {:top "17.65%", :left "45.65%", :animation-delay "1840ms", :letter :N}]
     ;    E
     [v-letter/letter
-     {:top "34px", :left "260px", :animation-delay "1860ms", :letter :E}]
+     {:top "17.65%", :left "56.52%", :animation-delay "1860ms", :letter :E}]
     ;    V
     [v-letter/letter
-     {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
+     {:top "17.65%", :left "67.39%", :animation-delay "1880ms", :letter :V}]
     ;    Frontend developer
     [:h1 {:class (s-home/home-occupation)} "Frontend developer"]
     ;    Email
