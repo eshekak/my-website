@@ -12,5 +12,5 @@
    :stroke-width stroke-width,
    :stroke-dasharray 1000,
    :stroke-dashoffset 1000,
-   :animation "dash 1s ease forwards",
+   :animation "svg 1s ease forwards",
    :animation-delay animation-delay})

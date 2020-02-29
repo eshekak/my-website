@@ -25,7 +25,7 @@
    :margin-top "0.5rem",
    :color color-primary,
    :font-size "1.75rem",
-   :animation "appear 1s ease forwards",
+   :animation "home-text 1s ease forwards",
    :animation-delay "1900ms"})
 
 (defstyles
@@ -35,5 +35,5 @@
    :margin-top "0.5rem",
    :color color-primary,
    :font-size "1.33rem",
-   :animation "appear 1s ease forwards",
+   :animation "home-text 1s ease forwards",
    :animation-delay "2100ms"})
