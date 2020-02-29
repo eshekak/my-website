@@ -1,22 +1,9 @@
 (ns my-website.letter.generator
   (:require-macros [cljss.core])
   (:require
-    [cljss.core :as css :refer-macros [defstyles]]
     [my-website.styles :as s]
-    [my-website.letter.letters :refer [letters]]
-    [my-website.styles.colors :refer [color-text-primary]]))
-
-; Styles
-(defn custom-styles
-  [animation-delay]
-  {:stroke color-text-primary,
-   :stroke-width 4,
-   :animation-delay animation-delay})
-
-(defstyles
-  letter--position
-  [{top :top, left :left}]
-  {:position "absolute", :top top, :left left, :width "90px"})
+    [my-website.letter.style :refer [letter--position custom-styles]]
+    [my-website.letter.letters :refer [letters]]))
 
 ; Markup
 (defn gen-letter
