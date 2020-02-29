@@ -18,7 +18,7 @@
     "zprint-clj": "^0.8.0"
   },
   "scripts": {
-    "serve": "node ./app.js",
+    "serve": "node ./serve.js",
     "format": "zprint-clj -i './**/*.{clj,cljs,cljc,edn}' -o ./"
   },
   "husky": {
