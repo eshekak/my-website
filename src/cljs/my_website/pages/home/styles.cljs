@@ -14,9 +14,12 @@
    :height "100vh",
    :text-align "center"})
 
-(defstyles home-container [] {:position "relative"})
+(defstyles
+  home-container
+  []
+  {:position "relative", :width "460px", :height "195px"})
 
-(defstyles home-logo [] {:width "460px", :height "110px"})
+(defstyles home-logo [] {:width "100%", :height "56.41%"})
 
 (defstyles
   home-occupation
