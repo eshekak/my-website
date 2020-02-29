@@ -27,4 +27,4 @@ RUN rm -rf dev lsp src target test
 # docker run -p 3000:3000 <container-name>
 #EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "serve"]
