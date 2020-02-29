@@ -386,9 +386,9 @@
       {:cx "77.176%", :cy "72.72%", :r "3.75%", :animation-delay "1560ms"}]
      [circle
       {:cx "77.176%", :cy "72.72%", :r "7.5%", :animation-delay "1580ms"}]]
-    ;   Letters
+    ;    Letters
     ;    Name
-    ;   A
+    ;    A
     [v-letter/letter
      {:top "-8.4%", :left "-3.26%", :animation-delay "1600ms", :letter :A}]
     ;    L
