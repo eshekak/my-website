@@ -2,7 +2,7 @@
   (:require
     [my-website.pages.home.styles :as s-home]
     [my-website.styles.svg :as s-svg]
-    [my-website.components.letter.views :refer [letter]]))
+    [my-website.components.letter.views :as v-letter]))
 
 ; Markup
 (defn line
@@ -132,43 +132,51 @@
     ;   Letters
     ;    Name
     ;   A
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "-15px", :animation-delay "1600ms", :letter :A}]
     ;    L
-    [letter {:top "-16px", :left "35px", :animation-delay "1620ms", :letter :L}]
+    [v-letter/letter
+     {:top "-16px", :left "35px", :animation-delay "1620ms", :letter :L}]
     ;    E
-    [letter {:top "-16px", :left "85px", :animation-delay "1640ms", :letter :E}]
+    [v-letter/letter
+     {:top "-16px", :left "85px", :animation-delay "1640ms", :letter :E}]
     ;    X
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "135px", :animation-delay "1660ms", :letter :X}]
     ;    A
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "185px", :animation-delay "1680ms", :letter :A}]
     ;    N
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "235px", :animation-delay "1700ms", :letter :N}]
     ;    D
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "285px", :animation-delay "1720ms", :letter :D}]
     ;    E
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "335px", :animation-delay "1740ms", :letter :E}]
     ;    R
-    [letter
+    [v-letter/letter
      {:top "-16px", :left "385px", :animation-delay "1760ms", :letter :R}]
     ;    Surname
     ;    O
-    [letter {:top "34px", :left "60px", :animation-delay "1780ms", :letter :O}]
+    [v-letter/letter
+     {:top "34px", :left "60px", :animation-delay "1780ms", :letter :O}]
     ;    L
-    [letter {:top "34px", :left "110px", :animation-delay "1800ms", :letter :L}]
+    [v-letter/letter
+     {:top "34px", :left "110px", :animation-delay "1800ms", :letter :L}]
     ;    E
-    [letter {:top "34px", :left "160px", :animation-delay "1820ms", :letter :E}]
+    [v-letter/letter
+     {:top "34px", :left "160px", :animation-delay "1820ms", :letter :E}]
     ;    N
-    [letter {:top "34px", :left "210px", :animation-delay "1840ms", :letter :N}]
+    [v-letter/letter
+     {:top "34px", :left "210px", :animation-delay "1840ms", :letter :N}]
     ;    E
-    [letter {:top "34px", :left "260px", :animation-delay "1860ms", :letter :E}]
+    [v-letter/letter
+     {:top "34px", :left "260px", :animation-delay "1860ms", :letter :E}]
     ;    V
-    [letter {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
+    [v-letter/letter
+     {:top "34px", :left "310px", :animation-delay "1880ms", :letter :V}]
     ;    Frontend developer
     [:h1 {:class (s-home/home-occupation)} "Frontend developer"]
     ;    Email
