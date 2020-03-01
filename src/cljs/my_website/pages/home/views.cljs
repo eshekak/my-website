@@ -2,8 +2,9 @@
   (:require
     [my-website.pages.home.styles :as s-home]
     [my-website.styles.svg :as s-svg]
+    [my-website.styles.colors :refer [color-secondary]]
     [my-website.components.letter.views :as v-letter]
-    [my-website.styles.colors :refer [color-secondary]]))
+    [my-website.components.icon.views :as v-icon]))
 
 ; Markup
 (defn line
@@ -436,7 +437,5 @@
      {:top "17.65%", :left "67.39%", :animation-delay "1880ms", :letter :V}]
     ;    Frontend developer
     [:h1 {:class (s-home/home-occupation)} "Frontend developer"]
-    ;    Email
-    [:a
-     {:class (s-home/home-email), :href "mailto:aolenev@pm.com", :tabindex -1}
-     "aolenev@pm.com"]]])
+    ;    Social icons
+    [v-icon/social-icons]]])
