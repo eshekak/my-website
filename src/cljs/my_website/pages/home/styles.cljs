@@ -33,20 +33,9 @@
   home-occupation
   []
   {:margin 0,
-   :margin-top "0.5rem",
+   :margin-top "2rem",
    :color color-primary,
    :font-size "1.75rem",
    :animation "home-text 1s ease forwards",
    :animation-delay "1900ms",
    ::css/media {[:screen :and [:max-width "500px"]] {:font-size "1rem"}}})
-
-(defstyles
-  home-email
-  []
-  {:display "block",
-   :margin-top "0.5rem",
-   :color color-primary,
-   :font-size "1.33rem",
-   :animation "home-text 1s ease forwards",
-   :animation-delay "2100ms",
-   ::css/media {[:screen :and [:max-width "500px"]] {:font-size "0.76rem"}}})
