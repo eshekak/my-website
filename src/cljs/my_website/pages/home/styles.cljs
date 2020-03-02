@@ -33,7 +33,7 @@
   home-occupation
   []
   {:margin 0,
-   :margin-top "2rem",
+   :margin-top "1rem",
    :color color-primary,
    :font-size "1.75rem",
    :animation "home-text 1s ease forwards",

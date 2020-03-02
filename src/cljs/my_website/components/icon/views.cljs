@@ -1,20 +1,17 @@
 (ns my-website.components.icon.views
   (:require
-    [my-website.components.icon.styles :as s-icon]
-    [my-website.styles.colors :refer [color-text-primary]]))
+    [my-website.components.icon.styles :as s-icon]))
 
 (defn icon
   [icon-type]
   (cond
     (= icon-type :github)
-      [:a
-       {:class (s-icon/social-icons--image "/assets/github.svg"),
-        :href "https://github.com/eshekak",
-        :target "_blank"}]
+      [:a {:href "https://github.com/eshekak", :target "_blank"}
+       [:img {:class (s-icon/social-icons--image), :src "/assets/github.svg"}]]
     (= icon-type :email)
-      [:a
-       {:class (s-icon/social-icons--image "/assets/envelope.svg"),
-        :href "mailto:hello@aolenev.me"}]
+      [:a {:href "mailto:hello@aolenev.me"}
+       [:img
+        {:class (s-icon/social-icons--image), :src "/assets/envelope.svg"}]]
     :else nil))
 
 (defn social-icons
