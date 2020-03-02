@@ -27,4 +27,6 @@
    :animation "social-icon 1s ease forwards",
    :animation-duration "3s",
    :animation-delay "2100ms",
-   :&:hover {:cursor "pointer"}})
+   :&:hover {:cursor "pointer"},
+   ::css/media
+     {[:screen :and [:max-width "500px"]] {:width "1.5rem", :height "1.5rem"}}})
