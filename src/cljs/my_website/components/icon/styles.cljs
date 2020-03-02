@@ -13,7 +13,7 @@
 (defstyles
   social-icons--container
   []
-  {:display "flex", :justify-content "space-evenly", :width "35%"})
+  {:display "flex", :justify-content "space-between", :width "25%"})
 
 (defstyles
   social-icons--image
@@ -21,6 +21,10 @@
   {:display "block",
    :width "1.75rem",
    :height "1.75rem",
+   :opacity 1,
    :background-image (str "url('" img-src "')"),
    :background-size "cover",
+   :animation "social-icon 1s ease forwards",
+   :animation-duration "3s",
+   :animation-delay "2100ms",
    :&:hover {:cursor "pointer"}})
