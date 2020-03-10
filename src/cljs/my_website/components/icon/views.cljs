@@ -6,12 +6,20 @@
   [icon-type]
   (cond
     (= icon-type :github)
-      [:a {:href "https://github.com/eshekak", :target "_blank"}
-       [:img {:class (s-icon/social-icons--image), :src "/assets/github.svg"}]]
+      [:a
+       {:href "https://github.com/eshekak",
+        :rel "noopener noreferrer nofollow",
+        :target "_blank"}
+       [:img
+        {:class (s-icon/social-icons--image),
+         :src "/assets/github.svg",
+         :alt "Link to my Github"}]]
     (= icon-type :email)
       [:a {:href "mailto:hello@aolenev.me"}
        [:img
-        {:class (s-icon/social-icons--image), :src "/assets/envelope.svg"}]]
+        {:class (s-icon/social-icons--image),
+         `:src "/assets/envelope.svg",
+         :alt "Link to my email"}]]
     :else nil))
 
 (defn social-icons

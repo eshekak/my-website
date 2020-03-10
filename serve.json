@@ -1,0 +1,12 @@
+{
+  "headers": [
+    {
+      "source" : "**/*.@(js|css|svg|png)",
+      "headers" : [{
+        "key" : "Cache-Control",
+        "value" : "max-age=31557600"
+      }]
+    }
+  ],
+  "etag": true
+}
