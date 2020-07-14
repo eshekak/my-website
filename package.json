@@ -1,6 +1,6 @@
 {
-  "name": "purechat",
-  "version": "0.2.8",
+  "name": "aolenev.me",
+  "version": "0.0.1",
   "private": true,
   "devDependencies": {
     "shadow-cljs": "2.9.8"
