@@ -1,30 +1,20 @@
-FROM skammer/clojurescript-builder:latest
+FROM openjdk:8-alpine as builder
 
-WORKDIR /usr/src/app
+RUN apk add --update nodejs yarn
 
-COPY ./ /usr/src/app
+WORKDIR /app
 
-# Install deps
-RUN npm install
-RUN lein deps
+COPY ./ ./
 
-# Build the project
-RUN lein prod
+RUN yarn install --frozen-lockfile
 
-# Remove extra files and directories
-RUN rm Dockerfile README.md karma.conf.js package-lock.json project.clj shadow-cljs.edn
-RUN rm -rf dev lsp src target test
+RUN ./node_modules/shadow-cljs/cli/runner.js release app
 
-# Remove all extra node_modules
-#RUN mv node_modules/serve serve && \
-#    mv node_modules/.bin .bin && \
-#    rm -rf node_modules && \
-#    mkdir node_modules && \
-#    mv serve node_modules/serve && \
-#    mv .bin node_modules/.bin
 
-# Exposure of the port is not supported by Heroku. Use it for the local testing via:
-# docker run -p 3000:3000 <container-name>
-#EXPOSE 3000
+FROM node:12-alpine as runner
 
-CMD ["npm", "run", "serve"]
+WORKDIR /app
+
+COPY --from=builder /app/build .
+
+CMD ["sh", "-c", "node ./app.js"]

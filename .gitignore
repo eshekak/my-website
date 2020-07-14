@@ -1,28 +1,22 @@
-/out/
-/resources/public/js/compiled/
-/target/
-/*-init.clj
-/*.log
+node_modules/
 
-# Leiningen
-/.lein-*
-/.nrepl-port
+/target
+/checkouts
+/src/gen
 
-# Node.js dependencies
-/node_modules/
-
-# shadow-cljs cache, port files
-/.shadow-cljs/
-
-/.cpcache
-
-# clj-kondo cache
-/.clj-kondo/.cache
-
-/.idea
-/lsp
-/.cpcache
-
+pom.xml
+pom.xml.asc
+*.iml
+*.jar
+*.log
+.shadow-cljs
+.idea
+.lein-*
+.nrepl-*
 .DS_Store
 
+.hgignore
+.hg/
 
+.cljs_node_repl/
+build/
