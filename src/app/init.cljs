@@ -11,7 +11,7 @@
 
 (defn request-handler
   [req res]
-  (.end res "foo"))
+  (.end res (str "<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='description' content='Alexander Olenev. Personally about code on my website!'><title>Alexander Olenev</title></head><body><noscript>Please enable JavaScript to continue.</noscript></body></html>")))
 
 
 (defonce server-refs
